@@ -43,7 +43,7 @@ Param| Type |Level1|Level2| Name     | Units   | Description                    
 #  This Vtable was created for CMA/CMA_GFS model data from the CMA server.
 #  The GRAPES_GFS(here in after referred to as CMA_GFS), the new generation of Global/Regional Assimilation and Prediction Enhanced System
 #  which is independently developped by China Meteorological Administration (CMA), has been put into formal operation.
-#  The data was accesed from:http://data.wis.cma.cn/DCPC_WMC_BJ/open/nwp/gmf_gra/thh00/    (note hh at end)
+#  The data was accesed from:http://data.wis.cma.cn/DCPC_WMC_BJ/open/nwp/gmf_gra/thh00/    (note hh at end).
 #  Developed by Dr. Haiqing SONG from Inner Mongolia Meteorological Service of China Meteorological Administration(CMA).
 #  E-mail:haiqingsong@emails.imau.edu.cn
 #  wgrib2 -var filename.grib2
