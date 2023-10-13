@@ -1,3 +1,20 @@
+Adding support for CMA-GFS in WPS 4.5
+The CMA-GFS grib2 datasets is now able to be ingested by the ungrib program. 
+The GRAPES_GFS(here in after referred to as CMA_GFS), the new generation of 
+Global/Regional Assimilation and Prediction Enhanced System which is 
+independently developped by China Meteorological Administration (CMA), 
+has been put into formal operation. So we are committed to solving the 
+problem of WPS correctly handling CMA_GFS forecast data.
+One Vtable files(Vtable.CMA_GFS) has been created with the fields required 
+by the WRF model.
+Modifications to the ungrib source code: Adding support for code 738 in rd_grid2.F 
+because model levels of CMA_GFS are on generalized vertical height coordinates.
+The CMA_GFS real time data is here:http://data.wis.cma.cn/DCPC_WMC_BJ/open/nwp/gmf_gra/
+We've tested the program with an Intel compiler and it passed without errors. 
+CMA_GFS forecast data were also used to test, the results are normal.
+This patch was added by Dr.Haiqing SONG from Inner Mongolia Meteorological Service of China Meteorological Administration(CMA).
+Any suggestions， E-mail:haiqingsong@emails.imau.edu.cn
+
 WRF Pre-Processing System Version 4.5
 
 http://www2.mmm.ucar.edu/wrf/users/
